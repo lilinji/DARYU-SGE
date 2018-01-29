@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/hexpm/l/plug.svg"></img>
 [![release](https://img.shields.io/github/release/guohongze/adminset.svg)](https://github.com/lilinji/DAYU-SGE/Aliyun-Novogene-SGE)
 <br>
-HPC-SGE-SDK基于DevOps理念开发，以整合全部运维场景为己任。HPC-SGE-SDK是一个真正的基于运维思维而开发的全自动化安装集群Pipline。<br>
+DAYU-SGE基于DevOps理念开发，以整合全部运维场景为己任。DAYU-SGE是一个真正的基于运维思维而开发的全自动化安装集群Pipline。<br>
 
 ## v1.0.1 新功能
 自动安装 master 主机.<br>
