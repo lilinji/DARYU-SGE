@@ -20,6 +20,11 @@
 # repository and then update this file as well. The purpose of this file is to
 # prepare the host and then execute all the tox tests.
 #
+###copy  ssh-copy-id
+
+alias cp='cp'
+
+cp -f  ssh-copy-id /usr/bin
 
 #######01  Creat conf json
 /usr/bin/python modfiy_conf_json.py -c compute -f gridengine -k 1 -m master -p Novo2017 
@@ -28,8 +33,7 @@ echo "install  HPC-CLUSTER.........."
 
 /usr/bin/python digger.py -c hpc-sge.json
 
-sleep 30
+sleep 20
 ####clear transh
-cd ../../
 
-rm -rf hpc-sdk
+rm -rf /root/DARYU-SGE

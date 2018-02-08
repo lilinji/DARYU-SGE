@@ -37,7 +37,7 @@ s = time.ctime()
 print (s)
 dict1={}
 dict2=[]
-################
+################ 新增去掉空行
 with open('host', 'r') as f1:
          #     list3 = list3.strip('\n')
      list3 = f1.readlines()
