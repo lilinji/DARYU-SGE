@@ -39,12 +39,14 @@ dict1={}
 dict2=[]
 ################
 with open('host', 'r') as f1:
+         #     list3 = list3.strip('\n')
      list3 = f1.readlines()
      for line in list3:
-          line = line.strip('\n')
-          line4 = re.split('\s+', line, re.M|re.I)# split 空格 输出数组行
-          dict2.append(line4[0]) ####放到数组
-          dict1[line4[0]] = line4[0]  #####字典 不推荐
+          line = line.strip()
+          if line != '':
+                line4 = re.split('\s+', line, re.M | re.I)  # split 空格 输出数组行
+                dict2.append(line4[0])  # 放到数组
+                dict1[line4[0]] = line4[0]  # 字典 不推荐
 ################Add json
 head = '''{
   "master": {
