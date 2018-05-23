@@ -118,7 +118,7 @@ class EnvSetupHelper(object):
 		#wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 		self.cmd_helper.run_local('wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo')
 		self.cmd_helper.run_local('yum clean all && yum makecache')
-		self.cmd_helper.run_local('yum install -y epel-release')
+		self.cmd_helper.run_local('yum install -y epel-release python-pip')
 		self.cmd_helper.run_local('yum install sshpass jemalloc-devel openssl-devel ncurses-devel pam-devel libXmu-devel hwloc-devel hwloc hwloc-libs java-devel javacc ant-junit libdb-devel motif-devel -y')
 		self.cmd_helper.run_local('yum install csh ksh xterm db4-utils perl-XML-Simple perl-Env xorg-x11-fonts-ISO8859-1-100dpi xorg-x11-fonts-ISO8859-1-75dpi -y')
 		### YUM NIS package rpm
