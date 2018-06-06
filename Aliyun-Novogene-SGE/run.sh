@@ -21,7 +21,7 @@
 # prepare the host and then execute all the tox tests.
 #
 ###copy  ssh-copy-id
-
+pip install --upgrade pip
 alias cp='cp'
 
 cp -f  ssh-copy-id /usr/bin
